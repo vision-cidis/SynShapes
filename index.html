@@ -6,30 +6,30 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title -->
-  <meta name="title" content="Thermal Infrared for Edge Detection Dataset (ThIRED)">
+  <meta name="title" content="SynShapes: A synthetic Image-Annotation dataset for Edge Detection">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="The first collection of thermal IR images with pixel-level edge annotations">
+  <meta name="description" content="The first dataset composed of synthetic images paired with exact edge map annotations">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="Edge Detection, Infrared Image, Computer Vision">
+  <meta name="keywords" content="Edge Detection, Synthetic data">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="Thermal Infrared for Edge Detection Dataset (ThIRED)">
+  <meta property="og:title" content="SynShapes: A synthetic Image-Annotation dataset for Edge Detection">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="The first collection of thermal IR images with pixel-level edge annotations">
+  <meta property="og:description" content="The first dataset composed of synthetic images paired with exact edge map annotations">
   <!-- TODO: Replace with your actual website URL -->
   <meta property="og:url" content="https://anonymous.4open.science/w/ThIRED-D969/">
   <meta property="article:tag" content="Edge Detection">
-  <meta property="article:tag" content="Infrared Image">
+  <meta property="article:tag" content="Synthetic data">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="Thermal Infrared for Edge Detection Dataset (ThIRED)">
+  <meta name="twitter:title" content="SynShapes: A synthetic Image-Annotation dataset for Edge Detection">
   <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="The first collection of thermal IR images with pixel-level edge annotations">
+  <meta name="twitter:description" content="The first dataset composed of synthetic images paired with exact edge map annotations">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -161,27 +161,25 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-light">About SynShapes</h2>
+      <h2 class="title is-light">About the dataset</h2>
 
       <div class="content">
         <p>
-          ThIRED is the first collection of thermal IR images with pixel-level edge annotations. This dataset consists of
-          20 thermal infrared images (1024 × 768 pixels), selected from the multi-scenario multi-modality dataset, also
-          known as M3FD<sup>*</sup>.
+          SynShapes is the first dataset composed of synthetic images paired with exact edge map annotations. The images are 
+          composed of geometric shapes, with randomness applied to selected parameters, including color, quantity, size,
+          and spatial position. Fixed parameters include the image resolution (1280×720), the total number of images (125),
+          the edge thickness (1 pixel), and the noise type (speckle). The dataset generation process requires less than two
+          minutes. The set of geometric primitives comprises: ellipses, circles, rectangles, triangles, regular polygons, and irregular polygons.
         </p>
 
         <p>
-          To ensure high-quality evaluation and training, pixel-accurate ground truth edge maps were generated through a
-          rigorous manual annotation process using the LabelBox platform. Unlike automated edge generation, this detailed
-          human supervision ensures that the ground truth preserves the full structural integrity of the thermal scene.
-          On average, each image contains approximately 900 edges, annotated as polylines, resulting in a total of around
-          18,000 annotated edges.
+          Also, in order to reduce the synthetic-to-real domain gap, the Fourier Domain Adaptation (FDA) method<sup>*</sup> was applied.
         </p>
 
         <!-- Referencia a M3FD -->
         <p class="dataset-ref">
-          <strong>*</strong> Liu et al., “Target-aware dual adversarial learning and a multi-scenario
-          multi-modality benchmark to fuse infrared and visible for object detection,” CVPR 2022.
+          <strong>*</strong> Yang, Yanchao, and Stefano Soatto. "Fda: Fourier domain adaptation for semantic segmentation." 
+          Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020.
         </p>
       </div>
     </div>
@@ -198,32 +196,36 @@
         <!-- ITEM 1 (2 imágenes en columna) -->
         <div class="item">
           <div class="carousel-two-images">
-            <img src="static/images/02217.png" alt="Result 1 - image A" loading="lazy"/>
-            <img src="static/images/02217_gt.png" alt="Result 1 - image B" loading="lazy"/>
+            <img src="static/images/synshapes_0068.png" alt="Result 1 - image A" loading="lazy"/>
+            <img src="static/images/synshapes_0068_gt.png" alt="Result 1 - image B" loading="lazy"/>
+            <img src="static/images/synshapes_0068_fda.png" alt="Result 1 - image C" loading="lazy"/>
           </div>
         </div>
 
         <!-- ITEM 2 -->
         <div class="item">
           <div class="carousel-two-images">
-            <img src="static/images/03718.png" alt="Result 2 - image A" loading="lazy"/>
-            <img src="static/images/03718_gt.png" alt="Result 2 - image B" loading="lazy"/>
+            <img src="static/images/synshapes_0086.png" alt="Result 2 - image A" loading="lazy"/>
+            <img src="static/images/synshapes_0086_gt.png" alt="Result 2 - image B" loading="lazy"/>
+            <img src="static/images/synshapes_0086_fda.png" alt="Result 2 - image C" loading="lazy"/>
           </div>
         </div>
 
         <!-- ITEM 3 -->
         <div class="item">
           <div class="carousel-two-images">
-            <img src="static/images/03870.png" alt="Result 3 - image A" loading="lazy"/>
-            <img src="static/images/03870_gt.png" alt="Result 3 - image B" loading="lazy"/>
+            <img src="static/images/synshapes_0119.png" alt="Result 3 - image A" loading="lazy"/>
+            <img src="static/images/synshapes_0119_gt.png" alt="Result 3 - image B" loading="lazy"/>
+            <img src="static/images/synshapes_0119_fda.png" alt="Result 3 - image C" loading="lazy"/>
           </div>
         </div>
 
         <!-- ITEM 4 -->
         <div class="item">
           <div class="carousel-two-images">
-            <img src="static/images/04064.png" alt="Result 4 - image A" loading="lazy"/>
-            <img src="static/images/04064_gt.png" alt="Result 4 - image B" loading="lazy"/>
+            <img src="static/images/synshapes_0123.png" alt="Result 4 - image A" loading="lazy"/>
+            <img src="static/images/synshapes_0123_gt.png" alt="Result 4 - image B" loading="lazy"/>
+            <img src="static/images/synshapes_0123_fda.png" alt="Result 4 - image C" loading="lazy"/>
           </div>
         </div>
 
@@ -258,7 +260,7 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <p>If you use the ThIRED dataset, please cite the following paper</p>
+      <p>If you use the SynShapes dataset, please cite the following paper</p>
       <pre id="bibtex-code"><code>@article{YourPaperKey2024,
         title={Your Paper Title Here},
         author={First Author and Second Author and Third Author},
