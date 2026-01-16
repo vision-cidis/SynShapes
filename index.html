@@ -134,14 +134,34 @@
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
             <h1 class="title is-1 publication-title">SynShapes: A synthetic image-annotation dataset for edge detection</h1>
+              <div class="is-size-5 publication-authors">
+                <!-- TODO: Replace with your paper authors and their personal links -->
+                <span class="author-block">
+                  <a target="_blank">Guillermo A. Castillo</a>,</span>
+                  <span class="author-block">
+                    <a target="_blank">Angel D. Sappa</a>,</span>
+                    <span class="author-block">
+                      <a target="_blank">Xavier Soria</a></span>
+              </div>
 
                   <!-- <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>VISAPP 2026</span>
                   </div> -->
 
+
+                  <span class="link-block">
+                        <a href="static/pdfs/VISAPP_2026_Paper_for_Review.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                  </span>
+
                   <!-- TODO: Replace with your Kaggle repository URL -->
                   <span class="link-block">
-                    <a href="https://www.kaggle.com/datasets/henryvelesacalara/synshapes" target="_blank"
+                    <a href="https://www.kaggle.com/datasets/guilloth3b3st/synshapes" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-download"></i>
@@ -178,8 +198,8 @@
 
         <!-- Referencia a M3FD -->
         <p class="dataset-ref">
-          <strong>*</strong> Yang, Yanchao, and Stefano Soatto. "Fda: Fourier domain adaptation for semantic segmentation." 
-          Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020.
+          <strong>*</strong> Yang, Yanchao, and Stefano Soatto. "FDA: Fourier Domain Adaptation for Semantic Segmentation." 
+          Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
         </p>
       </div>
     </div>
@@ -191,41 +211,86 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
 
-        <!-- ITEM 1 (2 imágenes en columna) -->
+        <!-- ITEM 1 -->
         <div class="item">
           <div class="carousel-two-images">
-            <img src="static/images/synshapes_0068.png" alt="Result 1 - image A" loading="lazy"/>
-            <img src="static/images/synshapes_0068_gt.png" alt="Result 1 - image B" loading="lazy"/>
-            <img src="static/images/synshapes_0068_fda.png" alt="Result 1 - image C" loading="lazy"/>
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0068.png" alt="Result 1 - original image" loading="lazy"/>
+              <figcaption>Synthetic Image</figcaption>
+            </figure>
+
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0068_fda.png" alt="Result 1 - FDA result" loading="lazy"/>
+              <figcaption>FDA Synthetic Image</figcaption>
+            </figure>
+
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0068_gt.png" alt="Result 1 - ground truth" loading="lazy"/>
+              <figcaption>Ground-Truth Edges</figcaption>
+            </figure>
           </div>
         </div>
 
         <!-- ITEM 2 -->
         <div class="item">
           <div class="carousel-two-images">
-            <img src="static/images/synshapes_0086.png" alt="Result 2 - image A" loading="lazy"/>
-            <img src="static/images/synshapes_0086_gt.png" alt="Result 2 - image B" loading="lazy"/>
-            <img src="static/images/synshapes_0086_fda.png" alt="Result 2 - image C" loading="lazy"/>
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0086.png" alt="Result 2 - original image" loading="lazy"/>
+              <figcaption>Synthetic Image</figcaption>
+            </figure>
+
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0086_fda.png" alt="Result 2 - FDA result" loading="lazy"/>
+              <figcaption>FDA Synthetic Image</figcaption>
+            </figure>
+
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0086_gt.png" alt="Result 2 - ground truth" loading="lazy"/>
+              <figcaption>Ground-Truth Edges</figcaption>
+            </figure>
           </div>
         </div>
 
         <!-- ITEM 3 -->
         <div class="item">
           <div class="carousel-two-images">
-            <img src="static/images/synshapes_0119.png" alt="Result 3 - image A" loading="lazy"/>
-            <img src="static/images/synshapes_0119_gt.png" alt="Result 3 - image B" loading="lazy"/>
-            <img src="static/images/synshapes_0119_fda.png" alt="Result 3 - image C" loading="lazy"/>
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0119.png" alt="Result 3 - original image" loading="lazy"/>
+              <figcaption>Synthetic Image</figcaption>
+            </figure>
+
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0119_fda.png" alt="Result 3 - FDA result" loading="lazy"/>
+              <figcaption>FDA Synthetic Image</figcaption>
+            </figure>
+
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0119_gt.png" alt="Result 3 - ground truth" loading="lazy"/>
+              <figcaption>Ground-Truth Edges</figcaption>
+            </figure>
           </div>
         </div>
 
         <!-- ITEM 4 -->
         <div class="item">
           <div class="carousel-two-images">
-            <img src="static/images/synshapes_0123.png" alt="Result 4 - image A" loading="lazy"/>
-            <img src="static/images/synshapes_0123_gt.png" alt="Result 4 - image B" loading="lazy"/>
-            <img src="static/images/synshapes_0123_fda.png" alt="Result 4 - image C" loading="lazy"/>
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0123.png" alt="Result 4 - original image" loading="lazy"/>
+              <figcaption>Synthetic Image</figcaption>
+            </figure>
+
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0123_fda.png" alt="Result 4 - FDA result" loading="lazy"/>
+              <figcaption>FDA Synthetic Image</figcaption>
+            </figure>
+
+            <figure class="carousel-image-block">
+              <img src="static/images/synshapes_0123_gt.png" alt="Result 4 - ground truth" loading="lazy"/>
+              <figcaption>Ground-Truth Edges</figcaption>
+            </figure>
+            
           </div>
         </div>
 
@@ -234,18 +299,21 @@
   </div>
 </section>
 <!-- End image carousel -->
+
  
 <!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <h2 class="title">Paper</h2>
+
+      <!-- TODO: Replace with your poster PDF -->
+      <iframe  src="static/pdfs/VISAPP_2026_Paper_for_Review.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
-  </section> -->
+  </section>
 <!--End paper poster -->
 
 
